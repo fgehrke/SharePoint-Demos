@@ -1,0 +1,5 @@
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ServerObjectModel_Teste\bin\Debug\ServerObjectModel_Teste.dll
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ServerObjectModel_Teste\bin\Debug\ServerObjectModel_Teste.pdb
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ServerObjectModel_Teste\obj\Debug\ServerObjectModel_Teste.csprojResolveAssemblyReference.cache
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ServerObjectModel_Teste\obj\Debug\ServerObjectModel_Teste.dll
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ServerObjectModel_Teste\obj\Debug\ServerObjectModel_Teste.pdb

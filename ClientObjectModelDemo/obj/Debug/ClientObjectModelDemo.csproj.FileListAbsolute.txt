@@ -1,0 +1,4 @@
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo\bin\Debug\ClientObjectModelDemo.dll
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo\bin\Debug\ClientObjectModelDemo.pdb
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo\obj\Debug\ClientObjectModelDemo.dll
+C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo\obj\Debug\ClientObjectModelDemo.pdb
