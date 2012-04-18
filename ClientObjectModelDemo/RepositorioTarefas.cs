@@ -38,16 +38,12 @@ namespace ClientObjectModelDemo
         public List<Tarefa> ObterPorFiltro(string titulo)
         {
             CamlQuery camlQuery = new CamlQuery();
-            camlQuery.ViewXml = "<View> " +
-                                "   <Query> " +
-                                "      <Where> " +
-                                "         <Contains> " +
-                                "            <FieldRef Name='Title' /> " +
-                                "            <Value Type='Text'>" + titulo + "</Value> " +
-                                "         </Contains> " +
-                                "      </Where> " +
-                                "   </Query> " +
-                                "</View> ";
+            camlQuery.ViewXml = "<View><Query><Where> " +
+                                "<Contains> " +
+                                "<FieldRef Name='Title' /> " +
+                                "<Value Type='Text'>" + titulo + "</Value> " +
+                                "</Contains> " +
+                                "</Where></Query></View> ";
 
             ListItemCollection itens = ListaTarefas.GetItems(camlQuery);
 
@@ -67,7 +63,7 @@ namespace ClientObjectModelDemo
             return TarefaConverterHelper.ItemParaTarefa(item);
         }
 
-        public Tarefa Salvar(Tarefa tarefa)
+        public int Salvar(Tarefa tarefa)
         {
             ListItem itemTarefa;
 
@@ -88,7 +84,7 @@ namespace ClientObjectModelDemo
             itemTarefa.Update();
             Contexto.ExecuteQuery();
 
-            return ObterPorID(itemTarefa.Id);
+            return itemTarefa.Id;
         }
 
         public void Excluir(int id)
@@ -97,9 +93,7 @@ namespace ClientObjectModelDemo
 
             tarefa.DeleteObject();
 
-            Contexto.ExecuteQuery(); 
+            Contexto.ExecuteQuery();
         }
-
-       
     }
 }

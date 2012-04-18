@@ -7,10 +7,7 @@ using ClientObjectModelDemo;
 using ClientObjectModelDemo.Entidades;
 
 namespace ClientObjectModelDemo_Teste
-{
-    /// <summary>
-    /// Summary description for RepositorioTarefaTeste
-    /// </summary>
+{  
     [TestClass]
     public class RepositorioTarefaTeste
     {
@@ -69,15 +66,16 @@ namespace ClientObjectModelDemo_Teste
             tarefa.Titulo = titulo;
 
             int totalAnterior = Repositorio.ObterTodos().Count;
-            Tarefa tarefaRetorno = Repositorio.Salvar(tarefa);
+            int tarefaId = Repositorio.Salvar(tarefa);
+            tarefa = Repositorio.ObterPorID(tarefaId);
             int totalDepois = Repositorio.ObterTodos().Count;
 
             Assert.IsNotNull(tarefa);
             Assert.AreEqual(titulo, tarefa.Titulo);
             Assert.AreEqual(totalAnterior +1, totalDepois);
+
         }
-
-
+        
         [TestMethod]
         public void AdicionarTarefa_TodosDados_COM()
         {
@@ -94,7 +92,8 @@ namespace ClientObjectModelDemo_Teste
             tarefa.AssignetTo = new Usuario(1, "Fabian André Gehrke");
 
             int totalAnterior = Repositorio.ObterTodos().Count;
-            Tarefa tarefaRetorno = Repositorio.Salvar(tarefa);
+            int tarefaId = Repositorio.Salvar(tarefa);
+            tarefa = Repositorio.ObterPorID(tarefaId);
             int totalDepois = Repositorio.ObterTodos().Count;
 
             Assert.IsNotNull(tarefa);
