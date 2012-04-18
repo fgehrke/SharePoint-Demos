@@ -1,0 +1,6 @@
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\obj\Debug\ListsASMXDemo.csprojResolveAssemblyReference.cache
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\bin\Debug\ListsASMXDemo.dll.config
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\bin\Debug\ListsASMXDemo.dll
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\bin\Debug\ListsASMXDemo.pdb
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\obj\Debug\ListsASMXDemo.dll
+C:\Projetos\SharePoint-Demos\ListsASMXDemo\obj\Debug\ListsASMXDemo.pdb

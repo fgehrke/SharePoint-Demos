@@ -5,3 +5,10 @@ C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjec
 C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.csprojResolveAssemblyReference.cache
 C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.dll
 C:\Users\Fabian\documents\visual studio 11\Projects\SharePoint Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.pdb
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\bin\Debug\ClientObjectModelDemo_Teste.dll
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\bin\Debug\ClientObjectModelDemo_Teste.pdb
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\bin\Debug\ClientObjectModelDemo.dll
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\bin\Debug\ClientObjectModelDemo.pdb
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.csprojResolveAssemblyReference.cache
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.dll
+C:\Projetos\SharePoint-Demos\ClientObjectModelDemo_Teste\obj\Debug\ClientObjectModelDemo_Teste.pdb

@@ -1,0 +1,4 @@
+C:\Projetos\SharePoint-Demos\ListDataDemo\bin\Debug\ListDataDemo.dll
+C:\Projetos\SharePoint-Demos\ListDataDemo\bin\Debug\ListDataDemo.pdb
+C:\Projetos\SharePoint-Demos\ListDataDemo\obj\Debug\ListDataDemo.dll
+C:\Projetos\SharePoint-Demos\ListDataDemo\obj\Debug\ListDataDemo.pdb

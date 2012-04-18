@@ -7,9 +7,9 @@ using Microsoft.SharePoint.Client;
 
 namespace ClientObjectModelDemo.Helpers
 {
-   public static class TarefaConverterHelper
+    public static class TarefaConverterHelper
     {
-       public static List<Tarefa> ItensParaTarefas(ListItemCollection itensTarefas)
+        public static List<Tarefa> ItensParaTarefas(ListItemCollection itensTarefas)
         {
             List<Tarefa> tarefas = new List<Tarefa>();
 
@@ -21,7 +21,7 @@ namespace ClientObjectModelDemo.Helpers
             return tarefas;
         }
 
-       public static Tarefa ItemParaTarefa(ListItem item)
+        public static Tarefa ItemParaTarefa(ListItem item)
         {
             Tarefa tarefa = new Tarefa();
             tarefa.ID = int.Parse(item["ID"].ToString());
@@ -29,9 +29,6 @@ namespace ClientObjectModelDemo.Helpers
 
             if (item["PercentComplete"] != null)
                 tarefa.PercentComplete = item["PercentComplete"].ToString();
-
-            // if (item["AssignetTo"] != null)
-            //     tarefa.AssignetTo = item["AssignetTo"].ToString();
 
             DateTime dataSaida;
 
@@ -48,34 +45,38 @@ namespace ClientObjectModelDemo.Helpers
             if (item["Body"] != null)
                 tarefa.Body = item["Body"].ToString();
 
-            // tarefa.TaskGroup = item["TaskGroup"].ToString();
+            if (item["TaskGroup"]!= null)
+                tarefa.TaskGroup = item["TaskGroup"].ToString();
+
             tarefa.Predecessors = item["Predecessors"].ToString();
             tarefa.Priority = item["Priority"].ToString();
 
             if (item["Status"] != null)
                 tarefa.Status = item["Status"].ToString();
 
+          //  tarefa.AssignetTo = new Usuario(item["AssignetTo"] as FieldUserValue);
             tarefa.Author = new Usuario(item["Author"] as FieldUserValue);
             tarefa.Editor = new Usuario(item["Editor"] as FieldUserValue);
 
             return tarefa;
         }
 
-       public static ListItem TarefaParaItem(Tarefa tarefa, ListItem item)
+        public static ListItem TarefaParaItem(Tarefa tarefa, ListItem item)
         {
             item["Title"] = tarefa.Titulo;
-            item["PercentComplete"] = tarefa.PercentComplete;
+
+            if (tarefa.PercentComplete != null) item["PercentComplete"] = tarefa.PercentComplete;
             // if (item["AssignetTo"] != null)
             //     tarefa.AssignetTo = item["AssignetTo"].ToString();
-            item["StartDate"] = tarefa.StartDate;
-            item["DueDate"] = tarefa.DueDate;
-            item["Body"] = tarefa.Body;
+            if (tarefa.StartDate != (default(DateTime))) item["StartDate"] = tarefa.StartDate;
+            if (tarefa.DueDate != (default(DateTime))) item["DueDate"] = tarefa.DueDate;
+            if (tarefa.Body != null) item["Body"] = tarefa.Body;
             // tarefa.TaskGroup = item["TaskGroup"].ToString();
-            item["Predecessors"] = tarefa.Predecessors;
-            item["Priority"] = tarefa.Priority;
-            item["Status"] = tarefa.Status;
-            item["Author"] = tarefa.Author;
-            item["Editor"] = tarefa.Editor;
+            if (tarefa.Predecessors != null) item["Predecessors"] = tarefa.Predecessors;
+            if (tarefa.Priority != null) item["Priority"] = tarefa.Priority;
+            if (tarefa.Status != null) item["Status"] = tarefa.Status;
+            if (tarefa.Author != null) item["Author"] = tarefa.Author;
+            if (tarefa.Editor != null) item["Editor"] = tarefa.Editor;
 
             return item;
         }

@@ -14,71 +14,92 @@ namespace ClientObjectModelDemo_Teste
     [TestClass]
     public class RepositorioTarefaTeste
     {
-        public RepositorioTarefas RepositorioTarefas { get; set; }
+        public RepositorioTarefas Repositorio { get; set; }
 
         public RepositorioTarefaTeste()
         {
-            RepositorioTarefas = new RepositorioTarefas();
+            Repositorio = new RepositorioTarefas();
         }
 
         [TestMethod]
-        public void ObterTodos()
+        public void ObterTodos_COM()
         {
-            List<Tarefa> tarefas = RepositorioTarefas.ObterTodos();
+            List<Tarefa> tarefas = Repositorio.ObterTodos();
 
             Assert.IsNotNull(tarefas);
             Assert.AreNotEqual(0, tarefas.Count);
         }
 
         [TestMethod]
-        public void ObterPorFiltro()
+        public void ObterPorFiltro_COM()
         {
-            List<Tarefa> tarefas = RepositorioTarefas.ObterPorFiltro("Tarefa Gerada");
+            List<Tarefa> tarefas = Repositorio.ObterPorFiltro("Tarefa Gerada");
 
             Assert.IsNotNull(tarefas);
             Assert.AreNotEqual(0, tarefas.Count);
         }
 
         [TestMethod]
-        public void ObterTarefaPorID()
+        public void ObterTarefaPorID_COM()
         {
-            Tarefa tarefa = RepositorioTarefas.ObterPorID(1);
+            Tarefa tarefa = Repositorio.ObterPorID(1);
 
             Assert.IsNotNull(tarefa);
             Assert.AreEqual(1, tarefa.ID);
         }
 
         [TestMethod]
-        public void Excluir()
+        public void Excluir_COM()
         {
-            List<Tarefa> tarefas = RepositorioTarefas.ObterPorFiltro("Tarefa Gerada");
+            List<Tarefa> tarefas = Repositorio.ObterPorFiltro("Tarefa Gerada");
 
-            int totalAnterior = RepositorioTarefas.ObterTodos().Count;
-            RepositorioTarefas.Excluir(tarefas[0].ID);
-            int totalDepois = RepositorioTarefas.ObterTodos().Count;
+            int totalAnterior = Repositorio.ObterTodos().Count;
+            Repositorio.Excluir(tarefas[0].ID);
+            int totalDepois = Repositorio.ObterTodos().Count;
 
             Assert.IsNotNull(tarefas);
             Assert.AreEqual(totalAnterior, totalDepois + 1);
         }
 
         [TestMethod]
-        public void AdicionarTarefa()
+        public void AdicionarTarefa_DadosNecessarios_COM()
         {
             Tarefa tarefa = new Tarefa();
             string titulo = "Tarefa Gerada no Teste";
             tarefa.Titulo = titulo;
-            tarefa.PercentComplete = "0";
-            tarefa.Priority = "0";
-            tarefa.StartDate = DateTime.Now;
-            tarefa.DueDate = DateTime.Now.AddDays(5);
 
-            int totalAnterior = RepositorioTarefas.ObterTodos().Count;
-            Tarefa tarefaRetorno = RepositorioTarefas.Salvar(tarefa);
-            int totalDepois = RepositorioTarefas.ObterTodos().Count;
+            int totalAnterior = Repositorio.ObterTodos().Count;
+            Tarefa tarefaRetorno = Repositorio.Salvar(tarefa);
+            int totalDepois = Repositorio.ObterTodos().Count;
 
             Assert.IsNotNull(tarefa);
             Assert.AreEqual(titulo, tarefa.Titulo);
             Assert.AreEqual(totalAnterior +1, totalDepois);
         }
+
+
+        [TestMethod]
+        public void AdicionarTarefa_TodosDados_COM()
+        {
+            Tarefa tarefa = new Tarefa();
+            string titulo = "Tarefa Gerada no Teste";
+            tarefa.Titulo = titulo;
+            tarefa.PercentComplete = "50";
+            tarefa.Priority = "1";
+            tarefa.StartDate = DateTime.Now;
+            tarefa.DueDate = DateTime.Now.AddDays(5);
+            tarefa.Body = "<div>Descrição da tarefa</div>";
+            tarefa.Status = "Em Andamento";
+            tarefa.Predecessors = "1";
+            tarefa.AssignetTo = new Usuario(1, "Fabian André Gehrke");
+
+            int totalAnterior = Repositorio.ObterTodos().Count;
+            Tarefa tarefaRetorno = Repositorio.Salvar(tarefa);
+            int totalDepois = Repositorio.ObterTodos().Count;
+
+            Assert.IsNotNull(tarefa);
+            Assert.AreEqual(titulo, tarefa.Titulo);
+            Assert.AreEqual(totalAnterior + 1, totalDepois);
+        }     
     }
 }

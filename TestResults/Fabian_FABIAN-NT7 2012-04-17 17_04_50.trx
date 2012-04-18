@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="febfe032-3518-43f4-a25e-5cd9fb8514b6" name="Fabian@FABIAN-NT7 2012-04-17 17:04:50" runUser="FABIAN-NT7\Fabian" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7b15b067-61e9-4e64-829f-36e11893f97e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Fabian_FABIAN-NT7 2012-04-17 17_04_50" />
+  </TestSettings>
+  <Times creation="2012-04-17T17:04:50.9435340-03:00" queuing="2012-04-17T17:04:51.2415471-03:00" start="2012-04-17T17:04:51.3205563-03:00" finish="2012-04-17T17:06:39.9940580-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebTest name="WebTest1" storage="c:\projetos\sharepoint-demos\webandloadtestproject1\webtest1.webtest" id="0a554d9b-68e5-4059-b4df-e09c52dd98b7" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iV2ViVGVzdDEiIElkPSIwYTU1NGQ5Yi02OGU1LTQwNTktYjRkZi1lMDljNTJkZDk4YjciIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSIiIFN0b3BPbkVycm9yPSJGYWxzZSIgUmVjb3JkZWRSZXN1bHRGaWxlPSIiPg0KICA8SXRlbXM+DQogICAgPExvb3AgVW5pcXVlU3RyaW5nSWQ9IjNlYmZlZDE4LWMyYTYtNDA5ZC05YTFiLTA1ZWVhMTkzMzUzZiI+DQogICAgICA8Q29uZGl0aW9uYWxSdWxlIENsYXNzbmFtZT0iTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5UZXN0VG9vbHMuV2ViVGVzdGluZy5SdWxlcy5Db3VudGluZ0xvb3BSdWxlLCBNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlF1YWxpdHlUb29scy5XZWJUZXN0RnJhbWV3b3JrLCBWZXJzaW9uPTEwLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EiIERpc3BsYXlOYW1lPSJDb3VudGluZyBMb29wIiBEZXNjcmlwdGlvbj0iRXhlY3V0ZXMgdGhlIHJlcXVlc3RzIGNvbnRhaW5lZCBpbiB0aGUgbG9vcCBhIHNwZWNpZmllZCBudW1iZXIgb2YgdGltZXMuIiBNYXhJdGVyYXRpb25zPSItMSIgQWR2YW5jZURhdGFDdXJzb3JzPSJGYWxzZSI+DQogICAgICAgIDxSdWxlUGFyYW1ldGVycz4NCiAgICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJDb250ZXh0UGFyYW1ldGVyTmFtZSIgVmFsdWU9Ikxvb3AgQ291bnRlciIgLz4NCiAgICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJJdGVyYXRpb25zQ291bnQiIFZhbHVlPSIxMCIgLz4NCiAgICAgICAgPC9SdWxlUGFyYW1ldGVycz4NCiAgICAgIDwvQ29uZGl0aW9uYWxSdWxlPg0KICAgICAgPEl0ZW1zPg0KICAgICAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iYWJhYWE4Y2ItMjgwZi00NGJmLTlmMjQtMzM3Y2Y5MjdiNWM0IiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9mYWJpYW5nZWhya2Uuc2hhcmVwb2ludC5jb20vTGlzdHMvVGFyZWZhcy9BbGxJdGVtcy5hc3B4IiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgLz4NCiAgICAgIDwvSXRlbXM+DQogICAgPC9Mb29wPg0KICA8L0l0ZW1zPg0KPC9XZWJUZXN0Pg==">
+      <Execution id="cc18c1b9-630f-4c86-b599-2ba1ee71f032" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="0a554d9b-68e5-4059-b4df-e09c52dd98b7" executionId="cc18c1b9-630f-4c86-b599-2ba1ee71f032" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebTestResult executionId="cc18c1b9-630f-4c86-b599-2ba1ee71f032" testId="0a554d9b-68e5-4059-b4df-e09c52dd98b7" testName="WebTest1" computerName="FABIAN-NT7" duration="00:01:37.8237607" startTime="2012-04-17T17:04:51.4165622-03:00" endTime="2012-04-17T17:06:39.8910199-03:00" testType="4e7599fa-5ecb-43e9-a887-cd63cf72d207" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc18c1b9-630f-4c86-b599-2ba1ee71f032">
+      <ResultFiles>
+        <ResultFile path="WebTest1.webtestResult" />
+      </ResultFiles>
+      <TestSettings name="Local" id="7b15b067-61e9-4e64-829f-36e11893f97e">
+        <Description>These are default test settings for a local test run.</Description>
+        <Execution>
+          <TestTypeSpecific>
+            <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+              <Browser name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header name="User-Agent" value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header name="Accept" value="*/*" />
+                  <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+                  <Header name="Accept-Encoding" value="GZIP" />
+                </Headers>
+              </Browser>
+            </WebTestRunConfiguration>
+          </TestTypeSpecific>
+          <AgentRule name="Execution Agents">
+          </AgentRule>
+        </Execution>
+        <Deployment runDeploymentRoot="Fabian_FABIAN-NT7 2012-04-17 17_04_50" />
+      </TestSettings>
+      <WebTestResultFilePath>Fabian_FABIAN-NT7 2012-04-17 17_04_50\In\cc18c1b9-630f-4c86-b599-2ba1ee71f032\WebTest1.webtestResult</WebTestResultFilePath>
+    </WebTestResult>
+  </Results>
+</TestRun>

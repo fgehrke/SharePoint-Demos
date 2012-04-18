@@ -1,0 +1,6 @@
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\bin\Debug\WebTest1.webtest
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\bin\Debug\WebAndLoadTestProject1.dll
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\bin\Debug\WebAndLoadTestProject1.pdb
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\obj\Debug\WebAndLoadTestProject1.csprojResolveAssemblyReference.cache
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\obj\Debug\WebAndLoadTestProject1.dll
+C:\Projetos\SharePoint-Demos\WebAndLoadTestProject1\obj\Debug\WebAndLoadTestProject1.pdb

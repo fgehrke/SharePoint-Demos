@@ -10,7 +10,7 @@ namespace ClientObjectModelDemo.Entidades
         public int ID { get; set; }
         public string Titulo { get; set; }
         public string PercentComplete { get; set; }
-        public string AssignetTo { get; set; }
+        public Usuario AssignetTo { get; set; }
         public DateTime DueDate { get; set; }
         public DateTime StartDate { get; set; }
         public string Body { get; set; }

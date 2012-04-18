@@ -1,0 +1,7 @@
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\bin\Debug\ListDataDemo_Teste.dll
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\bin\Debug\ListDataDemo_Teste.pdb
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\bin\Debug\ListDataDemo.dll
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\bin\Debug\ListDataDemo.pdb
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\obj\Debug\ListDataDemo_Teste.csprojResolveAssemblyReference.cache
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\obj\Debug\ListDataDemo_Teste.dll
+C:\Projetos\SharePoint-Demos\ListDataDemo_Teste\obj\Debug\ListDataDemo_Teste.pdb
